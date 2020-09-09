@@ -1,0 +1,255 @@
+main,
+footer {
+  padding: 20px;
+}
+
+footer {
+  padding-top: 0px;
+}
+
+.addressButton,
+.contactButton {
+  position: relative;
+  border: none;
+  color: #333333;
+  background-color: #eeeff2;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+.desktopHeadline {
+  display: none;
+}
+
+.addressButton::after {
+  background-image: url(../images/down-arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  padding-top: 21px;
+  margin-left: 15px;
+}
+
+.contactButton::after {
+  background-image: url(../images/down-arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  padding-top: 21px;
+  margin-left: 15px;
+}
+
+.notActive::after {
+  background-image: url(../images/right-arrow.svg);
+}
+
+.address {
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  color: #333333;
+  line-height: 20px;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.address::before {
+  background-image: url(../images/pin.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin-left: -18px;
+  margin-top: 4px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 260px;
+  width: 100%;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 260px;
+  width: 100%;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contactButton {
+  position: relative;
+}
+
+.workingHours {
+  text-align: center;
+  position: relative;
+}
+
+.workingHours::before {
+  background-image: url(../images/calendar.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin-left: -16px;
+  margin-top: 10px;
+}
+
+.workingHoursElement {
+  font-size: 15px;
+  line-height: 30px;
+  display: inline-block;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phones {
+  font-size: 16px;
+  color: #333333;
+  position: relative;
+}
+
+.phones::before {
+  background-image: url(../images/phone.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin-left: -18px;
+  margin-top: 4px;
+}
+
+.companylink {
+  color: grey;
+  font-size: 16px;
+  line-height: 25px;
+  text-decoration: none;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 1px;
+}
+
+.companyName {
+  text-align: center;
+  position: relative;
+}
+
+.companyName::before {
+  background-image: url(../images/globe.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+
+@media (min-width: 1024px) {
+  main,
+  footer {
+    padding: 40px;
+  }
+  footer {
+    padding-top: 0px;
+  }
+
+  .addressButton,
+  .contactButton {
+    display: none;
+  }
+
+  .desktopHeadline {
+    margin: 0px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+
+  .address {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .address::before {
+    width: 18px;
+    height: 18px;
+    margin-left: -21px;
+    margin-top: 6px;
+  }
+  .mapouter,
+  .gmap_canvas {
+    height: 500px;
+  }
+
+  .workingHoursElement {
+    font-size: 24px;
+  }
+
+  .workingHoursElement:not(:first-child) {
+    padding-left: 10px;
+  }
+
+  .workingHours::before {
+    width: 18px;
+    height: 18px;
+    margin-left: -25px;
+    margin-top: 7px;
+  }
+
+  .phones {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .phones::before {
+    width: 18px;
+    height: 18px;
+    margin-left: -25px;
+    margin-top: 6px;
+  }
+  .companylink {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .companyName::before {
+    width: 18px;
+    height: 18px;
+    margin-left: -26px;
+    margin-top: 11px;
+  }
+} ;
